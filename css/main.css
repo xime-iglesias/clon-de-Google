@@ -1,0 +1,227 @@
+body {
+    /* Margen predeterminado */
+    margin: 0;
+    /* Margen pa´dentro*/
+    padding: 0; 
+    /* Tamaño de texto */
+    font-size: 12px;
+    /* Fuente del texto */
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/* Navegación */
+
+
+header{
+    /* width - ancho /// height - alto*/
+    width: 100%;
+    height: 55px;
+}
+
+header nav{
+    /* Cómo se puede mover el elemento */
+    display:flex; 
+    justify-content:flex-end;
+}
+
+header nav .nav-right-section{
+    /*Eliminar viñetas*/
+    list-style-type:none;
+    width: 250px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* Altura */
+    height:auto;
+}
+
+nav .nav-right-section a{
+    /*Color de texto*/
+    color:rgb(21, 21, 21);
+    /* Línea debajo de */
+    text-decoration: none;
+    /* Margen derecho*/
+    margin-right: 25px;
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+nav .nav-right-section img{
+    /* Margin left- margen a la izquierda SOLAMENTE */
+    margin-left: 20px;
+    /* Redondear */
+    border-radius: 100px;
+    /* width - anchura */
+    width: 35px;
+}
+
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/* Main */
+
+main{
+    text-align:center;
+    margin-top: 160px;
+}
+/* Sección logo */
+main .main-logo{
+    width: 530px;
+    margin:0 auto;
+    margin-bottom: 40px;
+}
+/* Logo Google */
+main .main-logo img{
+    height: 100px;
+}
+
+/* Sección input */
+main .main-input{
+    /* width - anchura */
+    width: 550px;
+    /* márgenes y centrado */
+    margin: 0 auto;
+    /* separar input de botones */
+    margin-bottom: 40px;
+}
+
+/* Cajita gris redondeada buscador */
+main .main-input-container{
+    /* ancho de línea, estilo y color */
+    border: 1px solid #DFE1E5;
+    /*Bordes redondeados */
+    border-radius: 30px;
+    width: 525px;
+    /* Mis componentes sean flexicles y se muevan */
+    display:flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+main .main-input input{
+    height: 40px;
+    width: 430px;
+    /* Quitar borde negro*/
+    border: none;
+    /* Quitar borde al hacer click */
+    outline:none;
+}
+
+main .main-input .search-icon{
+    /* Poner una imagen */
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    /* */
+    background-position: center;
+    width: 17px;
+    height: 17px;
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-position: center;
+    width: 17px;
+    height: 17px;
+    background-size: contain;
+    padding-left:1%;
+    background-repeat: no-repeat;
+}   
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-position: center;
+    width: 17px;
+    height: 17px;
+    background-size: contain;
+    padding-left :8%;
+    background-repeat: no-repeat;
+}
+
+main .main-buttons{
+    width: 550px;
+    /* Vertical / Horizontal */
+    margin: 0 auto;
+    
+}
+
+main .main-buttons div{
+    /* Alinear elementos en la misma línea*/
+    display:inline-block;
+}
+
+main .main-buttons button{
+    border: 0;
+    height: 40px;
+    background-color: #F8F9FA;
+    font-size: 14px;
+    color: #43484C;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 0 15px;
+}
+
+/* Nos permite agregarle diseño al poner cursor sobre el elemento*/
+main .main-input-container:hover{
+    box-shadow: 0 0 5px #20212447;
+}
+main .main-buttons button:hover{
+    color:#202124;
+    /* ancho de línea - estilo de línea - color */
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+/*/////////////////////////////////////////
+//////////////////////////////////////////
+/////////////////////////////////////////
+Pie de página*/
+
+footer{
+    width: 100%;
+    height: 55px;
+
+}
+
+footer .footer-left{
+    list-style-type: none ;
+    width: 100%;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    height:auto;
+
+}
+
+footer .footer-left a{
+    text-decoration: none;
+    margin-right: 25px;
+
+}
+
+footer .footer-right{
+    list-style-type: none ;
+    width: 250px;
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    height:auto;
+    padding-left: 1111px;
+
+}
+
+footer .footer-right a{
+    text-decoration: none;
+    margin-right: 25px;
+    
+}
+
